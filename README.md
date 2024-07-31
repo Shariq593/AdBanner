@@ -1,40 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## **GrowEasy Assignment of Ad Banner Management:**
+**Overview :**
+This project is a simple ad banner management application built with Next.js and TypeScript. It features a homepage that displays a list of ad banners and allows users to edit them through a modal interface. The application is designed to be easy to use and maintain, showcasing reusable components for displaying and editing banners.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Features:**
+1. **Display Ad Banners**: The homepage fetches and displays a list of ad banners from a local JSON file.
+2. **Edit Ad Banners**: Clicking on a banner opens a modal with an editing form where users can update banner details.
+3. **Update and Save Changes**: Users can save their changes, which updates the banner data on the homepage.
+## Project Structure
+1. pa**ges/index.tsx**: The main file that sets up the homepage. It fetches banner data, displays the banners, and handles modal operations.
+2. **components/BannerImageComp.tsx**: A reusable component for displaying ad banners with an "Edit" button.
+3. **components/EditBannerTemplateBs.tsx**: A modal component that allows users to edit the selected banner's details.
+##
+**Usage**
+1. **Viewing Banners**: On the homepage, ad banners are displayed in a grid layout.
+2. **Editing Banners:** Click the "Edit" button on any banner to open the modal. Update the banner details in the form and click "Save" to apply changes. The modal will close, and the banner will be updated on the homepage.
+## JSON Data Structure
+The JSON file adBanners.json used for fetching banner data has the following structure:
+```
+[
+  {
+    "id": 1,
+    "title": "Sample Banner 1",
+    "description": "Description for banner 1",
+    "cta": "Learn More",
+    "image": "path/to/image1.jpg",
+    "background": "path/to/background1.jpg"
+  },
+  ...
+]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Code Details
+1. State Management: The useState and useEffect hooks manage the banner data and modal state.
+2. Modal Replacement: When a new banner is selected for editing, the current modal is replaced by the new one.
+## Future Improvements
+1. **Validation**: Add form validation to ensure banner details are entered correctly.
+2. **Backend Integration**: Replace the local JSON file with a backend API to fetch and update banner data dynamically.
+3. **Styling**: Enhance the modal and banner styles for a better user experience.
