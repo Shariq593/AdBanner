@@ -2,7 +2,7 @@
 ## **GrowEasy Assignment of Ad Banner Management:**
 **Overview :**
 This project is a simple ad banner management application built with Next.js and TypeScript. It features a homepage that displays a list of ad banners and allows users to edit them through a modal interface. The application is designed to be easy to use and maintain, showcasing reusable components for displaying and editing banners.
-
+## Deployed Link - https://master--adbanners.netlify.app/
 **Features:**
 1. **Display Ad Banners**: The homepage fetches and displays a list of ad banners from a local JSON file.
 2. **Edit Ad Banners**: Clicking on a banner opens a modal with an editing form where users can update banner details.
